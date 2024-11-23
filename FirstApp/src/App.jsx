@@ -46,6 +46,7 @@ export const NetFlixSeries = () => {
   const name = "Queen of tears";
   const rating = 8.9;
   const src = "1.jpg";
+  const genre=()=>{return "romance"}
   const summary =
     "Queen of Tears (Korean: 눈물의 여왕) is a 2024 " +
     "South Korean television series written by Park Ji-eun, co-directed by " +
@@ -84,6 +85,10 @@ export const NetFlixSeries = () => {
       <p style={{ width: "600px", margin: "auto" }}>
         <strong style={{ color: "green", fontSize: "30px" }}>Summary:</strong>
         {summary}
+      </p>
+      <p style={{ width: "600px", margin: "auto" }}>
+        <strong style={{ color: "green", fontSize: "30px" }}>Genre:</strong>
+        {genre()}
       </p>
       <hr style={{ height: "5px", backgroundColor: "black" }} />
     </div>
