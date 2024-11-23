@@ -47,6 +47,11 @@ export const NetFlixSeries = () => {
   const rating = 8.9;
   const src = "1.jpg";
   const genre=()=>{return "romance"}
+  const age=16;
+  const canWatch=()=>{
+    if(age>=18) return "Watch Now";
+    return "Not available";
+  }
   const summary =
     "Queen of Tears (Korean: 눈물의 여왕) is a 2024 " +
     "South Korean television series written by Park Ji-eun, co-directed by " +
@@ -90,6 +95,8 @@ export const NetFlixSeries = () => {
         <strong style={{ color: "green", fontSize: "30px" }}>Genre:</strong>
         {genre()}
       </p>
+      {/* <button style={{marginBottom:"5px",fontSize:"20px",padding:"5px",marginTop:"5px",color:"white",backgroundColor:"green",outline:"none",borderRadius:"10px"}}>{age>=18?"Watch Now":"Not available"}</button> */}
+      <button style={{marginBottom:"5px",fontSize:"20px",padding:"5px",marginTop:"5px",color:"white",backgroundColor:"green",outline:"none",borderRadius:"10px"}}>{canWatch()}</button>
       <hr style={{ height: "5px", backgroundColor: "black" }} />
     </div>
   );
