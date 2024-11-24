@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Practice } from "./Practice";
 
 const App = () => {
   // return <div>
@@ -30,13 +31,14 @@ const App = () => {
   // );
 
   return (
-    <>
-      <NetFlixSeries />
-      <NetFlixSeries />
-      <NetFlixSeries />
-      <NetFlixSeries />
-      <NetFlixSeries />
-    </>
+    <Practice/>
+    // <>
+    //   <NetFlixSeries />
+    //   <NetFlixSeries />
+    //   <NetFlixSeries />
+    //   <NetFlixSeries />
+    //   <NetFlixSeries />
+    // </>
   );
 };
 
