@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    margin:10px;
+    box-shadow: 2px 2px 10px black;
+    width: 30%;
+    text-align: center;
+    
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 5px;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 15px;
+}
+
+.image{
+    width: 100%;
+    height: 400px;
+}
+
+.content{
+    
+    text-align: left;
+    padding: 5px;
+}
+.content h1{
+    color:aqua;
+}
+
+.content p{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.content button{
+    margin-top: 5px;
+}
+
+.avg{
+    color:red;
+}
+.high{
+    color:green;
+}
+
+.rating{
+    background-color:yellow;
+}

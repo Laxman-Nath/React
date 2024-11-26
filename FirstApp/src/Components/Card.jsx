@@ -96,24 +96,26 @@
 
 
 
-import SeriesData from "../api/SeriesData";
-import "../index.css";
+
+import styles from "../Components/NetFlix.module.css";
+
 export const Card = (props) => {
   //    console.log(props);
   const {img_url,name,rating,description,genre,cast,watch_url}=props.series;
   return (
-    <li className="box">
+    <li className={styles.box}>
       <div>
-        <img className="image" src={img_url} alt="error"  />
+        <img className={styles.image} src={img_url} alt="error"  />
       </div>
-      <div className="content">
+      <div className={styles.content}>
       <h1>
        Name:
         {name}
       </h1>
       <hr style={{}}/>
       {/* <p style={{ratingcolor:rating>9?"red":"green"}}>  */}
-      <p className={`rating ${rating>9?"high":"avg"}`}> 
+      <p className={`${styles.rating} ${rating > 9 ? styles.high : styles.avg}`}> 
+
 
         Rating:
         {rating}
