@@ -64,7 +64,7 @@ const SeriesData=()=>{
       "name": "Queen of Tears",
       "id": "queen-of-tears",
       "img_url": "7.jpg",
-      "rating": "TBD",
+      "rating": "9.2",
       "description": "A gripping tale of love, loss, and resilience set against the backdrop of a war-torn nation.",
       "cast": ["Kim Soo Hyun", "Kim Ji Won"],
       "genre": ["Drama", "Romance"],

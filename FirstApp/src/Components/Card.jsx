@@ -97,34 +97,43 @@
 
 
 import SeriesData from "../api/SeriesData";
+import "../index.css";
 export const Card = (props) => {
   //    console.log(props);
   const {img_url,name,rating,description,genre,cast,watch_url}=props.series;
   return (
-    <li>
-      <div style={{ textAlign: "center" }}>
-        <img src={img_url} alt="error" height={400} width={600} />
+    <li className="box">
+      <div>
+        <img className="image" src={img_url} alt="error"  />
       </div>
-      <p>
-        <strong style={{ color: "green", fontSize: "30px" }}>Name:</strong>
+      <div className="content">
+      <h1>
+       Name:
         {name}
-      </p>
-      <p>
-        <strong style={{ color: "green", fontSize: "30px" }}>Rating:</strong>
+      </h1>
+      <hr style={{}}/>
+      {/* <p style={{ratingcolor:rating>9?"red":"green"}}>  */}
+      <p className={`rating ${rating>9?"high":"avg"}`}> 
+
+        Rating:
         {rating}
       </p>
-      <p style={{ width: "600px", margin: "auto" }}>
-        <strong style={{ color: "green", fontSize: "30px" }}>Summary:</strong>
+      <hr style={{}}/>
+      <p >
+        Summary:
         {description}
       </p>
-      <p style={{ width: "600px", margin: "auto" }}>
-        <strong style={{ color: "green", fontSize: "30px" }}>Genre:</strong>
+      <hr style={{}}/>
+      <p >
+        Genre:
         {genre.join(", ")}
       </p>
-      <p style={{ width: "600px", margin: "auto" }}>
-        <strong style={{ color: "green", fontSize: "30px" }}>Cast:</strong>
+      <hr style={{}}/>
+      <p>
+      Cast:
         {cast}
       </p>
+      <hr style={{}}/>
 
       <button
         style={{
@@ -138,8 +147,9 @@ export const Card = (props) => {
           Watch now
         </a>
       </button>
+      </div>
 
-      <hr style={{ height: "5px" }} />
+     
     </li>
   );
 };

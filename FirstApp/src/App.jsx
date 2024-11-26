@@ -6,8 +6,8 @@ const App = () => {
 
   return (
     <>
-      {/* <NetFlixSeries /> */}
-     <Profile/>
+      <NetFlixSeries />
+     {/* <Profile/> */}
       
     </>
   );
