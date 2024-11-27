@@ -98,9 +98,30 @@
 
 
 import styles from "../Components/NetFlix.module.css";
+// import styled from 'styled-component';
+import styled from "styled-components";
 
 export const Card = (props) => {
   //    console.log(props);
+  // const Button =styled.button({
+  //   fontSize:"20px",
+  //   padding:"5px",
+  //   backgroundColor:"green",
+  //   color:"white",
+  //   // backgroundColor:(rating)=>(rating>=9)?"green":"red",
+    
+
+  // })
+
+  const Button =styled.button`
+    font-size:20px;
+    padding:5px;
+    // background-color:green;
+    color:white;
+     background-color:${({rating})=>(rating>=9?'green':'red')};
+    
+
+  `
   const {img_url,name,rating,description,genre,cast,watch_url}=props.series;
   return (
     <li className={styles.box}>
@@ -137,7 +158,7 @@ export const Card = (props) => {
       </p>
       <hr style={{}}/>
 
-      <button
+      {/* <button
         style={{
           textDecoration: "none",
           fontSize: "20px",
@@ -148,7 +169,13 @@ export const Card = (props) => {
         <a href={watch_url} style={{ textDecoration: "none" }}>
           Watch now
         </a>
-      </button>
+      </button> */}
+
+      <Button rating={rating}>
+      <a href={watch_url} style={{ textDecoration: "none" }}>
+          Watch now
+        </a>
+      </Button>
       </div>
 
      
