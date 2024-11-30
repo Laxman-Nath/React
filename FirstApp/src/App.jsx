@@ -1,3 +1,4 @@
+import { DerivedState } from "./Components/DerivedState";
 import { EventHandling } from "./Components/EventHandling";
 import { EventPropagation } from "./Components/EventPropagation";
 import { EventProps } from "./Components/EventProps";
@@ -12,7 +13,8 @@ const App = () => {
       {/* <EventHandling/> */}
       {/* <EventProps /> */}
       {/* <EventPropagation/> */}
-      <State/>
+      {/* <State/> */}
+      <DerivedState/>
     </>
   );
 };
