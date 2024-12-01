@@ -4,8 +4,12 @@ import { EventPropagation } from "./Components/EventPropagation";
 import { EventProps } from "./Components/EventProps";
 import { State } from "./Components/Hooks/State";
 import { LiftStateUp } from "./Components/LiftStateup";
+import { Login } from "./Components/Login";
+import { MiniProject } from "./Components/MiniProject1";
 import { NetFlixSeries } from "./Components/NetFlixSeries"; /// this is mixed export
 import { Profile } from "./Components/Profile/Profile";
+import { RegistrationProper } from "./Components/RegisterProper";
+import { RegistrationForm } from "./Components/RegistrationForm";
 const App = () => {
   return (
     <>
@@ -16,7 +20,11 @@ const App = () => {
       {/* <EventPropagation/> */}
       {/* <State/> */}
       {/* <DerivedState/> */}
-      <LiftStateUp/>
+      {/* <LiftStateUp/> */}
+      {/* <MiniProject/> */}
+      {/* <RegistrationForm/> */}
+      {/* <RegistrationProper/> */}
+      <Login/>
     </>
   );
 };
