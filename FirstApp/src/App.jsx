@@ -18,6 +18,7 @@ import { NotToFetchApiData } from "./Components/FetchApiData/NotToFetchApiData";
 import { UseRef } from "./Components/Hooks/UseRef";
 import { ForwardRef } from "./Components/Hooks/UseRef/ForwardRef";
 import { UseId } from "./Components/Hooks/UseId";
+import { Parent } from "./Components/PropsDrilling";
 const App = () => {
   
   return (
@@ -40,7 +41,8 @@ const App = () => {
       {/* <NotToFetchApiData/> */}
       {/* <UseRef/> */}
       {/* <ForwardRef/> */}
-      <UseId/>
+      {/* <UseId/> */}
+      <Parent/>
     </>
   );
 };
