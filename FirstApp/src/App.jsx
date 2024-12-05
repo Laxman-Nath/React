@@ -17,6 +17,7 @@ import { RegistrationForm } from "./Components/RegistrationForm";
 import { NotToFetchApiData } from "./Components/FetchApiData/NotToFetchApiData";
 import { UseRef } from "./Components/Hooks/UseRef";
 import { ForwardRef } from "./Components/Hooks/UseRef/ForwardRef";
+import { UseId } from "./Components/Hooks/UseId";
 const App = () => {
   
   return (
@@ -38,7 +39,8 @@ const App = () => {
       {/* <CleanUp/> */}
       {/* <NotToFetchApiData/> */}
       {/* <UseRef/> */}
-      <ForwardRef/>
+      {/* <ForwardRef/> */}
+      <UseId/>
     </>
   );
 };
