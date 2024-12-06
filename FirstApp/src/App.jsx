@@ -19,8 +19,10 @@ import { UseRef } from "./Components/Hooks/UseRef";
 import { ForwardRef } from "./Components/Hooks/UseRef/ForwardRef";
 import { UseId } from "./Components/Hooks/UseId";
 import { Parent } from "./Components/PropsDrilling";
+import { Home } from "./Components/ContextApi/Home";
+import { BioContextProvider } from "./Components/ContextApi/ContextApi";
+import { About } from "./Components/ContextApi/About";
 const App = () => {
-  
   return (
     <>
       {/* <NetFlixSeries /> */}
@@ -42,7 +44,13 @@ const App = () => {
       {/* <UseRef/> */}
       {/* <ForwardRef/> */}
       {/* <UseId/> */}
-      <Parent/>
+      {/* <Parent/> */}
+
+      <BioContextProvider>
+        <Home />
+        <About/>
+      </BioContextProvider>
+      
     </>
   );
 };
