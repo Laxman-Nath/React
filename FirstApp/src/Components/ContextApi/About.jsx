@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import { BioContext } from "./ContextApi";
+import { BioContext, useBioContext } from "./ContextApi";
 
 export const About = () => {
-  const { name, age } = useContext(BioContext);
+//   const { name, age } = useContext(BioContext);
+const {name,age}=useBioContext();
   return (
     <div className="flex flex-col justify-center h-full items-center">
       <h1>This is about page.</h1>
