@@ -19,9 +19,11 @@ import { UseRef } from "./Components/Hooks/UseRef";
 import { ForwardRef } from "./Components/Hooks/UseRef/ForwardRef";
 import { UseId } from "./Components/Hooks/UseId";
 import { Parent } from "./Components/PropsDrilling";
-import { Home } from "./Components/ContextApi/Home";
-import { BioContextProvider } from "./Components/ContextApi/ContextApi";
-import { About } from "./Components/ContextApi/About";
+// import { Home } from "./Components/ContextApi/Home";
+// import { BioContextProvider } from "./Components/ContextApi/ContextApi";
+// import { About } from "./Components/ContextApi/About";
+import { UseReducer } from "./Components/Hooks/UseReducer";
+import { SideBar } from "./Components/SideBar";
 const App = () => {
   return (
     <>
@@ -46,10 +48,13 @@ const App = () => {
       {/* <UseId/> */}
       {/* <Parent/> */}
 
-      <BioContextProvider>
+      {/* <BioContextProvider>
         <Home />
         <About/>
-      </BioContextProvider>
+      </BioContextProvider> */}
+
+      {/* <UseReducer/> */}
+      <SideBar/>
       
     </>
   );
