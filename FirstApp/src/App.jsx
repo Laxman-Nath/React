@@ -24,6 +24,8 @@ import { Parent } from "./Components/PropsDrilling";
 // import { About } from "./Components/ContextApi/About";
 import { UseReducer } from "./Components/Hooks/UseReducer";
 import { SideBar } from "./Components/SideBar";
+import { Index } from "./Components/Hooks/UseReducer/index2";
+import { MemoCounts } from "./Components/Hooks/UseMemo/MemoCount";
 const App = () => {
   return (
     <>
@@ -54,7 +56,9 @@ const App = () => {
       </BioContextProvider> */}
 
       {/* <UseReducer/> */}
-      <SideBar/>
+      {/* <SideBar/> */}
+      {/* <Index/> */}
+      <MemoCounts/>
       
     </>
   );
