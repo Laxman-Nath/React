@@ -27,6 +27,7 @@ import { SideBar } from "./Components/SideBar";
 import { Index } from "./Components/Hooks/UseReducer/index2";
 import { MemoCounts } from "./Components/Hooks/UseMemo/MemoCount";
 import { UseMemo } from "./Components/Hooks/UseMemo/UseMemo";
+import { UseCallBack } from "./Components/Hooks/UseMemo/UseCallBack";
 const App = () => {
   return (
     <>
@@ -59,8 +60,10 @@ const App = () => {
       {/* <UseReducer/> */}
       {/* <SideBar/> */}
       {/* <Index/> */}
-      <MemoCounts/>
+      {/* <MemoCounts/> */}
       {/* <UseMemo/> */}
+
+      <UseCallBack/>
       
     </>
   );
