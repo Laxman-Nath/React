@@ -26,6 +26,7 @@ import { UseReducer } from "./Components/Hooks/UseReducer";
 import { SideBar } from "./Components/SideBar";
 import { Index } from "./Components/Hooks/UseReducer/index2";
 import { MemoCounts } from "./Components/Hooks/UseMemo/MemoCount";
+import { UseMemo } from "./Components/Hooks/UseMemo/UseMemo";
 const App = () => {
   return (
     <>
@@ -59,6 +60,7 @@ const App = () => {
       {/* <SideBar/> */}
       {/* <Index/> */}
       <MemoCounts/>
+      {/* <UseMemo/> */}
       
     </>
   );
