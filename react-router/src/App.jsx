@@ -3,6 +3,7 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
+  useNavigation,
 } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
@@ -13,7 +14,9 @@ import { ErrorPage } from "./pages/ErrorPage";
 import { GetAllMovies } from "./apis/GetAllMovies";
 
 function App() {
+ 
   const router = createBrowserRouter([
+    
     {
       path: "/",
       element: <AppLayout />,
@@ -45,7 +48,7 @@ function App() {
   //     </Route>
   //   )
   // )
-
+  
   return <RouterProvider router={router} />;
 }
 
