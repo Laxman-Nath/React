@@ -10,6 +10,7 @@ import { Movie } from "./pages/Movie";
 import { AppLayout } from "./components/UI/layout/AppLayout";
 import "././App.css"
 import { ErrorPage } from "./pages/ErrorPage";
+import { GetAllMovies } from "./apis/GetAllMovies";
 
 function App() {
   const router = createBrowserRouter([
@@ -29,6 +30,7 @@ function App() {
         {
           path: "/movie",
           element: <Movie />,
+          loader:GetAllMovies
         },
       ],
     },
