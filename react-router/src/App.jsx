@@ -9,18 +9,18 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Movie } from "./pages/Movie";
 import { AppLayout } from "./components/UI/layout/AppLayout";
-import "././App.css"
+import "././App.css";
 import { ErrorPage } from "./pages/ErrorPage";
-import { GetAllMovies } from "./apis/GetAllMovies";
+import { getAllMovies } from "./apis/GetAllMovies";
+import { MovieDetails } from "./pages/MovieDetails";
+import { getMovieDetails } from "./apis/GetMovieDetails";
 
 function App() {
- 
   const router = createBrowserRouter([
-    
     {
       path: "/",
       element: <AppLayout />,
-      errorElement:<ErrorPage/>,
+      errorElement: <ErrorPage />,
       children: [
         {
           path: "/",
@@ -33,7 +33,12 @@ function App() {
         {
           path: "/movie",
           element: <Movie />,
-          loader:GetAllMovies
+          loader: getAllMovies,
+        },
+        {
+          path: "/movie/:movieId",
+          element: <MovieDetails />,
+          loader:getMovieDetails
         },
       ],
     },
@@ -48,7 +53,7 @@ function App() {
   //     </Route>
   //   )
   // )
-  
+
   return <RouterProvider router={router} />;
 }
 
