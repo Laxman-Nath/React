@@ -14,6 +14,7 @@ import { ErrorPage } from "./pages/ErrorPage";
 import { getAllMovies } from "./apis/GetAllMovies";
 import { MovieDetails } from "./pages/MovieDetails";
 import { getMovieDetails } from "./apis/GetMovieDetails";
+import { Contact, contactData } from "./pages/Contact";
 
 function App() {
   const router = createBrowserRouter([
@@ -40,6 +41,11 @@ function App() {
           element: <MovieDetails />,
           loader:getMovieDetails
         },
+        {
+          path:"/contact",
+          element:<Contact/>,
+          action:contactData
+        }
       ],
     },
   ]);

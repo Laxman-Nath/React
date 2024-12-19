@@ -62,7 +62,7 @@ export const Header=()=>{
             </li>
             <li className="nav-item">
               <NavLink
-                to="contact"
+                to="/contact"
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }
