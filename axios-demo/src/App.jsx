@@ -13,7 +13,7 @@ const App = () => {
       //   "http://www.omdbapi.com/?i=tt3896198&apikey=7cb3f4de&s=titanic&page=1"
       // );
 
-      const response=await getMoviesApi();
+      const response = await getMoviesApi();
 
       console.log(response);
       console.log(response.data);
@@ -43,7 +43,7 @@ const App = () => {
   // return <h1 className="text-red-500">This is react app</h1>
   return (
     // <div className="h-full w-full ">
-      <Movies movies={movies} />
+    <Movies movies={movies} />
     // </div>
   );
 };
